@@ -56,7 +56,7 @@ namespace esp8266_read_by_naim {
     /**
     * Connect to ThingSpeak and download data. It would not download anything if it failed to connect to Wifi or ThingSpeak.
     */
-    //% block="download data from ThingSpeak|URL/IP = %ip|read API key = %read_api_key|Field 1 = %n1|Field 2 = %n2|Field 3 = %n3|Field 4 = %n4|Field 5 = %n5|Field 6 = %n6|Field 7 = %n7|Field 8 = %n8"
+    //% block="download data from ThingSpeak|URL/IP = %ip|read API key = %read_api_key"
     //% ip.defl=api.thingspeak.com
     //% read_api_key.defl=your_read_api_key
     export function connectThingSpeak(ip: string, read_api_key: string) {
@@ -74,8 +74,7 @@ namespace esp8266_read_by_naim {
                 basic.pause(100)
             }
         }
-        return 
-
+        return
     }
 
 
