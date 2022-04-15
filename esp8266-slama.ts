@@ -74,7 +74,7 @@ namespace esp8266_read_by_naim {
                 basic.pause(100)
             }
         }
-        return "&field1"
+        return 
     }
 
 
