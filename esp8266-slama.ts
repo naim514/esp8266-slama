@@ -70,12 +70,12 @@ namespace esp8266_read_by_naim {
                 let str: string = "GET /read?api_key=" + read_api_key + "field1"
                 sendAT("AT+CIPSEND=" + (str.length + 2))
                 sendAT(str, 0) // load data
-                last_upload_successful = waitResponse()
+                //last_upload_successful = waitResponse()
                 basic.pause(100)
             }
         }
       //  let str: string = "GET /read?api_key=" + read_api_key + "field1"
-        return &field1
+        return "GET /read?api_key=" + read_api_key + "field1"
 
     }
 
