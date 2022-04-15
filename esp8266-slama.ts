@@ -74,7 +74,9 @@ namespace esp8266_read_by_naim {
                 basic.pause(100)
             }
         }
-        return "field1"
+      //  let str: string = "GET /read?api_key=" + read_api_key + "field1"
+        return &field1
+
     }
 
 
