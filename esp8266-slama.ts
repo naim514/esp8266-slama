@@ -59,7 +59,7 @@ namespace esp8266_read_by_naim {
     //% block="download data from ThingSpeak|URL/IP = %ip|read API key = %read_api_key"
     //% ip.defl=api.thingspeak.com
     //% read_api_key.defl=your_read_api_key
-     function connectThingSpeak(ip: string, read_api_key: string) {
+     export function connectThingSpeak(ip: string, read_api_key: string) {
         if (wifi_connected && read_api_key != "") {
             thingspeak_connected = false
             sendAT("AT+CIPSTART=\"TCP\",\"" + ip + "\",80", 0) // connect to website server
